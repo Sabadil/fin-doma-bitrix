@@ -1,0 +1,19 @@
+name: fin-doma
+recipe: lamp
+config:
+  webroot: .
+  database: mysql
+  config:
+    php: config/php.ini
+services:
+  phpmyadmin:
+    type: phpmyadmin
+    hosts:
+      - database
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+proxy:
+  mailhog:
+    - mail.fin-doma.lndo.site

@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/local/templates/doma/assets/_dist/css/app.css" => "16856997622817","/local/templates/doma/assets/_dist/css/fonts.css" => "1685699759161",]; ?>
